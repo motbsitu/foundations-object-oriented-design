@@ -63,12 +63,45 @@ FURPS+
 
 - Should take a day or so.  No diagrams at this point.
 
-USE CASE diagram
-- diagram of several use cases and multiple actors at same time
+- USE CASE diagram:  diagram of several use cases and multiple actors at same time
 
-- USER STORY
+USER STORY
   - One or two sentences. Focus on intent.  one need.
   As a (type of user/role)
   I want (goal)
   so that (reason)
   - example:  "as a user I want to sort entries by date so that I can find the most recent content"
+
+## Domain Modeling
+- Not perfect
+- 1 - 2 hours
+- conceptual model
+
+1. Collect use cases, user stories, other written requirements.  Underline objects (nouns).  Combine and eliminate as needed (eg. if Order is one, sub parts of that like order number and order status aren't needed).  Diagram out - simply put in boxes
+2. Identify class relationships - draw lines between boxes. Most interesting connections.  Indicate how related (quick words to describe relationship, and multiplicity)
+3. Identify class responsibilities - look for verbs.  (verify items, confirm order, etc).  Where does the responsibility of the action lay (which object). These will become the methods.
+
+- CRC Cards
+  - Class, responsibility, collaboration (other classes it interacts with)
+  - Each represents one class.
+
+## Creating Classes
+- CLASS DIAGRAM
+  - class names - capital, singular.  
+  - attributes - camel-case
+  - operations - camel-case, parentheses with any parameters, and : return type
+  - add + or - in front of each item indicating if public(+) or private(-)
+
+- Object Lifetime
+  - Instantiation:  new keyword.  (eg.  Customer fred = new Customer())
+  - Constructor:  method to construct the object. Any variables belonging to object are set to the right values when object created.
+  - Destructor/finalizer:  object no longer needed, disposed, deleted
+
+- Static / Shared members  (underline them in UML)
+  - shared variables, class level
+  - only one copy for class across all objects
+  - Java uses 'static'
+
+## Inheritance
+- "Is A" relationship. (A car is a vehicle.)
+- 

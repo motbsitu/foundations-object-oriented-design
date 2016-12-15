@@ -83,7 +83,7 @@ USER STORY
 
 - CRC Cards
   - Class, responsibility, collaboration (other classes it interacts with)
-  - Each represents one class.
+ - Each represents one class.
 
 ## Creating Classes
 - CLASS DIAGRAM
@@ -104,4 +104,9 @@ USER STORY
 
 ## Inheritance
 - "Is A" relationship. (A car is a vehicle.)
-- 
+- Using abstract classes:  never instantiated.  The class exists purely for being inherited. (contains functionality, methods, variables, etc - to be used by subclasses)
+- Classes that are instantiated - concrete class.
+- Interface:  list of method signatures.  (JAVA:  interface, objectiveC: is called protocol)  Contract to use methods..  Can use interfaces within other objects. 'instanceOf'
+- Aggregation and composition:
+  - Aggregation 'has a' relationship.  Classroom has a student.  Represent 1 to many with    1   *
+  - Composition implies ownership - may need constructor or Destructor to create or delete containing objects.
